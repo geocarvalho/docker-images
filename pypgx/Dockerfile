@@ -4,7 +4,7 @@
 # Build with:
 #   docker build -t pypgx:v0.15.0 .
 # Run with:
-#   docker run pypgx:v0.15.0 pypgx --version
+#   docker run pypgx:v0.15.0 --version
 ###############################################
 FROM continuumio/miniconda3:4.9.2-alpine
 
