@@ -8,12 +8,12 @@
 ###############################################
 FROM continuumio/miniconda3:4.9.2-alpine
 
+WORKDIR /app
+
 # Install git
 RUN apk update && \
     apk add git && \
     git clone --branch 0.15.0 --depth 1 https://github.com/sbslee/pypgx-bundle
-
-WORKDIR /app
 
 # Create the environment:
 COPY environment.yml .
