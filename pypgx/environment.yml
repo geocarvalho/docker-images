@@ -1,0 +1,8 @@
+name: myenv
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.8
+  - pypgx=0.15.0
+  - git
