@@ -1,14 +1,11 @@
 ###############################################
 # Dockerfile to build pypgx container image
-# Based on Miniconda3
-# Build with:
 #   docker build -t pypgx:v0.15.0 .
-# Run with:
-#   docker run pypgx:v0.15.0 pypgx --version
+#   docker run -v "$PWD":/data pypgx:v0.15.0 pypgx --version
 ###############################################
 FROM continuumio/miniconda3:4.9.2-alpine
 
-WORKDIR /app
+WORKDIR /root
 
 # Install git
 RUN apk update && \
